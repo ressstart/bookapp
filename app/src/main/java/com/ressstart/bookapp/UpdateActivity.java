@@ -6,6 +6,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.DialogInterface;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -67,7 +68,7 @@ public class UpdateActivity extends AppCompatActivity {
             title_input.setText(title);
             author_input.setText(author);
             pages_input.setText(pages);
-
+            Log.d("stev", title + " " + author + " " + pages);
         }
         else{
             Toast.makeText(this, "No data", Toast.LENGTH_SHORT).show();
